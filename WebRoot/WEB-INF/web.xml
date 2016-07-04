@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>chinapay_java</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+		<description></description>
+		<display-name>doCreateOrder</display-name>
+		<servlet-name>doCreateOrder</servlet-name>
+		<servlet-class>com.rx.unop.action.UnopServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+		<servlet-name>doCreateOrder</servlet-name>
+		<url-pattern>/doCreateOrder</url-pattern>
+  </servlet-mapping>
+
+ <!--  <servlet>
+		<description></description>
+		<display-name>getBgReturn</display-name>
+		<servlet-name>getBgReturn</servlet-name>
+		<servlet-class>chinapay.servlet.GetBgReturnServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+		<servlet-name>getBgReturn</servlet-name>
+		<url-pattern>/getBgReturn</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+		<description></description>
+		<display-name>getPageReturn</display-name>
+		<servlet-name>getPageReturn</servlet-name>
+		<servlet-class>chinapay.servlet.GetPageReturnServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+		<servlet-name>getPageReturn</servlet-name>
+		<url-pattern>/getPageReturn</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+		<description></description>
+		<display-name>refundSend</display-name>
+		<servlet-name>refundSend</servlet-name>
+		<servlet-class>chinapay.servlet.RefundSendServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+		<servlet-name>refundSend</servlet-name>
+		<url-pattern>/refundSend</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+		<description></description>
+		<display-name>getRefundResult</display-name>
+		<servlet-name>getRefundResult</servlet-name>
+		<servlet-class>chinapay.servlet.GetRefundResultServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+		<servlet-name>getRefundResult</servlet-name>
+		<url-pattern>/getRefundResult</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+		<description></description>
+		<display-name>querySend</display-name>
+		<servlet-name>querySend</servlet-name>
+		<servlet-class>chinapay.servlet.QuerySendServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+		<servlet-name>querySend</servlet-name>
+		<url-pattern>/querySend</url-pattern>
+  </servlet-mapping>
+ -->
+</web-app>
